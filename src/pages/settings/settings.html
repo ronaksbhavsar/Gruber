@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{ 'SETTINGS_TITLE' | translate }}</ion-title>
+
+        <ion-buttons end>
+            <button ion-button (click)="logoff()">
+                {{'LOGOFF' | translate}}
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+<ion-content>
+    <ion-list no-border>
+
+        <ion-item>
+            <ion-label>{{ 'SETTINGS_NAME' | translate }}</ion-label>
+            <ion-input [(ngModel)]="user.u_name" (blur)="updateUserName(user.u_name)" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>{{ 'SETTINGS_LANGUAGE' | translate }}</ion-label>
+            <ion-select [ngModel]="user.selectedLanguage" (ngModelChange)="updateUserLanguages($event)">
+                <ion-option *ngFor="let option of Languages" [value]="option">{{option.name}}</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <ng-container *ngIf="userSettings.length > 0">
+            <ion-list-header>
+                {{'SETTINGS_GENERAL_SETTINGS' | translate }}
+            </ion-list-header>
+            <ion-item *ngFor="let option of userSettings">
+                <ion-label>{{option.set_key | translate}}</ion-label>
+                <ion-toggle [(ngModel)]="option.set_value" (ionChange)="updateSettingItem(option)"></ion-toggle>
+            </ion-item>
+        </ng-container>
+    </ion-list>
+</ion-content>
+ 

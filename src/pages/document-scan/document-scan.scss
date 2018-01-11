@@ -1,0 +1,21 @@
+page-document-scan {
+    ion-content {
+        text-align: center;
+    }
+
+    .btn-cancel {
+        order: 3 !important;
+    }
+
+    ion-avatar img,
+    ion-thumbnail img {
+        display: block;
+        margin: 0 auto;
+        width: 25vh;
+        height: auto;
+    }
+
+    .transport-images {
+        margin-top: 15px;
+    }
+}

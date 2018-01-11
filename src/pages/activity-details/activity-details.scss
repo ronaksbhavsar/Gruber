@@ -1,0 +1,315 @@
+page-activity-details {
+    .warning-block {
+        background-color: #F2F5CC;
+        padding: 10px;
+    }
+
+    .notification-icon {
+        color: #FF4242;
+        font-size: 18px;
+    }
+
+    #map {
+        max-height: 250px;
+    }
+
+    .scan-document {
+        color: black;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    .activity-map {
+        position: relative;
+    }
+
+    .open-alert {
+        border-radius: 25px;
+    }
+
+    .header-block {
+        font-size: 14px;
+        background-color: #F6F6F8;
+        font-weight: 600;
+
+        ion-icon {
+            font-size: 18px;
+        }
+    }
+
+    .b-top {
+        border-top: 2px solid #DCDEE2;
+    }
+
+    .b-bottom {
+        border-bottom: 1px solid #DCDEE2;
+    }
+
+    .btn-confirm {
+        float: right;
+    }
+    /*START:: Time line css */
+    .cd-container {
+        /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+        width: 93%;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    .cd-container::after {
+        /* clearfix */
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .timelineText {
+        color: #4A4A4A;
+        padding-bottom: 10px;
+    }
+
+    .timelineIcon {
+        font-size: 25px;
+        color: white;
+    }
+
+
+
+    #cd-timeline {
+        position: relative;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: 10px !important;
+    }
+
+    #cd-timeline::before {
+        /* this is the vertical line */
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 8px;
+        height: 100%;
+        width: 2px;
+        background: #BDC1C9;
+    }
+
+    .cd-timeline-block {
+        position: relative;
+        margin: 0em 0;
+        color: #4A4A4A;
+    }
+
+    .cd-timeline-block:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .cd-timeline-block:first-child {
+        margin-top: 0;
+    }
+
+    .cd-timeline-block:last-child {
+        margin-bottom: 0;
+    }
+
+    .cd-timeline-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border-color: #4a87ee;
+        border-style: solid;
+        border-width: 3px;
+        padding-top: 3px;
+        background: white;
+        text-align: center;
+    }
+
+    .cd-timeline-icon i {
+        color: #4a87ee;
+    }
+
+    .activity-green {
+        border-color: #3AA789;
+    }
+
+    .activity-grey {
+        border-color: #BDC1C9;
+    }
+
+    .activity-yellow {
+        border-color: #FFBA54;
+    }
+
+
+    .cd-timeline-picture {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border-color: #4a87ee;
+        border-style: solid;
+        border-width: 2px;
+        background: white;
+    }
+
+    .cd-timeline-picture img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .cd-timeline-content {
+        position: relative;
+        margin-left: 35px;
+        margin-bottom: 10px;
+        line-height: 20px;
+    }
+
+    .cd-timeline-content:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .cd-timeline-content h2 {
+        color: #303e49;
+    }
+
+    .cd-timeline-content p,
+    .cd-timeline-content .cd-read-more,
+    .cd-timeline-content .cd-date {
+        font-size: 13px;
+        /*font-size: 0.8125rem;*/
+    }
+
+    .cd-timeline-content .cd-read-more,
+    .cd-timeline-content .cd-date {
+        display: inline-block;
+    }
+
+    .cd-timeline-content p {
+        margin: 3px 0;
+        line-height: 1.6;
+    }
+
+    .card-content-md {
+        padding: 0px 16px;
+    }
+    /*END :: Time line css */
+    hr {
+        height: 1px !important;
+    }
+
+    .notes-label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #4A4A4A;
+        /*margin: 11px 8px 5px 0;*/
+    }
+
+    .notes-description {
+        font-size: 13px;
+        color: #9B9B9B;
+    }
+
+    .goods-desc {
+        .item-inner {
+            border-bottom: 0px !important;
+        }
+    }
+
+
+    .event-timeline {
+        margin: -1px 0 0px;
+
+        img[item-start] {
+            margin: 8px 5px 8px 0 !important;
+        }
+
+        .item-block {
+            padding-left: 5px;
+        }
+
+        .event-desc {
+            word-wrap: break-word;
+            font-size: 13px;
+        }
+
+        .item-block:last-child {
+            border-bottom: 0px;
+        }
+    }
+
+    .doc-list {
+        margin: -1px 0 5px;
+
+        ion-label {
+            font-size: 14px;
+            color: #4A4A4A;
+        }
+
+        ion-note {
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+
+    .activity-actions {
+        background: white;
+    }
+
+
+    .activity-actions > ion-col {
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        text-align: center;
+        min-height: 49px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .activity-actions > ion-col:last-child {
+        border-right: 0px;
+    }
+
+    .action-button ion-icon {
+        font-size: 1.8em;
+        color: #9B9B9B;
+    }
+
+    .action-label {
+        word-wrap: break-word;
+        margin: 3px 0px 3px 0px;
+        color: #131212;
+        font-size: 12px;
+    }
+
+    @media only screen and (max-width: 320px) {
+        .action-label {
+            font-size: 10px;
+        }
+    }
+
+    .action-button {
+        background-color: white;
+        padding: 1px;
+    }
+
+    .footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+    }
+}
+
+ion-modal.inset-modal {
+    // transparent black background overlay
+    background-color: rgba(0, 0, 0, .5) !important;
+    transition: opacity .25s ease-in-out;
+    padding: 22vh 10vw;   
+}

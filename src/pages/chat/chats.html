@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            {{'CHAT_MESSAGE_TITLE' | translate }}
+        </ion-title>
+      
+        <ion-buttons end>
+            <button ion-button icon-only item-end (click)="goToOtherPage('NotificationsListPage')">
+                <ion-icon name="ios-notifications-outline"></ion-icon>
+            </button>
+            <button ion-button icon-only item-end (click)="syncData()">
+                <ion-icon name="ios-refresh-outline"></ion-icon>
+                {{'SYNC' | translate }}
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+    <ion-toolbar>
+        <ion-searchbar class="searchbox" [(ngModel)]="userFilter.dispatcherName"></ion-searchbar>
+        <!--<input type="text" class="searchbox" [(ngModel)]="userFilter.title" placeholder="name">-->
+    </ion-toolbar>
+</ion-header>
+<ion-content class="chats">
+    <ion-fab right bottom (click)="viewContacts('ChatContactsPage')">
+        <button ion-fab><ion-icon name="md-add"></ion-icon></button>
+    </ion-fab>
+
+    <ion-list>
+        <ion-item *ngFor="let chat of chatsData | orderBy : 'lastDate'  : 'asc' | filterBy: userFilter" (click)="viewMessages(chat)">
+            <ion-avatar item-start class="profile-picture" [ngStyle]="generateUserIcon(chat.dispatcherName.charAt(0))">
+                <span>{{chat.dispatcherName.charAt(0)}}</span>
+            </ion-avatar>
+            <h2>{{chat.dispatcherName}} </h2>
+            <p>{{chat.lastMessage}}</p>
+            <ion-note item-end color="primary" *ngIf="chat.lastDate">
+                <ion-icon name="md-time"></ion-icon>                
+                {{chat.lastDate | moment:"hh:mm a" | lowercase}}
+            </ion-note>
+        </ion-item>
+    </ion-list>
+   
+</ion-content>

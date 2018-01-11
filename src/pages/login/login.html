@@ -1,0 +1,52 @@
+<ion-content>
+    <form>
+        <ion-row>
+            <ion-col col-1>
+            </ion-col>
+            <ion-col col-10>
+                <ion-row>
+                    <ion-col>
+                        <img src="assets/img/gruber-logo.png" />
+                    </ion-col>
+                </ion-row>
+                <ion-row class="title-text">
+                    <ion-col>
+                        <span>{{ 'LOGIN_SENDVERIFICATIONCODE_TITLE' | translate }}</span>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row class="phone-number">
+                    <ion-label stacked class="phone-number-label">{{ 'COUNTRIES_TITLE' | translate }}</ion-label>
+                    <ion-col col-12 class="country">
+                        <ion-item>
+                            <ion-label> </ion-label>
+                            <ion-select id="country" [(ngModel)]="account.country" #country="ngModel" required [ngModelOptions]="{standalone: true}">
+                                <ion-option *ngFor="let country of countries"
+                                            value="+{{country.code}}">{{country.name}}</ion-option>
+                            </ion-select>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-label stacked class="phone-number-label">{{ 'LOGIN_PHONENUMBER_LABEL' | translate }}</ion-label>
+                        <div>
+                            <ion-input col-4 id="countrycode" type="text" value="{{account.country}}" disabled></ion-input>
+
+                            <ion-input col-8 id="phonenumber" type="number" required maxlength="10" [(ngModel)]="account.phone_number"
+                                       [pattern]="phoneNumberPattern" #phonenumber="ngModel" name="phone_number"></ion-input>
+                        </div>
+                        <div [hidden]="phonenumber.valid || phonenumber.pristine" class="help-block">
+                            <div [hidden]="!phonenumber.hasError('required')">{{'Phone number is required' | translate}}</div>
+                            <div [hidden]="!phonenumber.hasError('pattern')">{{'Phone number format should be' | translate}} <small><b>{{'9978113511' | translate}}</b></small></div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+
+            </ion-col>
+            <ion-col col-1>
+            </ion-col>
+        </ion-row>
+    </form>
+</ion-content>
+<ion-footer>
+    <button ion-button full color="primary" class="login-button" [disabled]="!phonenumber.valid || !country.valid" (click)="doLogin()">{{ 'LOGIN_SENDVERIFICATIONCODE_BUTTON' | translate }}</button>
+</ion-footer>

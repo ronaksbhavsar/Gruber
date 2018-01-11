@@ -1,0 +1,62 @@
+page-login {
+    .title-text {
+        padding-top: 12px;
+        color: #898989;
+        line-height: 22px;
+    }
+
+    .phone-number {
+        padding-top: 35px;
+    }
+
+    .phone-number-label {
+        color: #606065;
+        font-weight: 500;
+    }
+
+    #countrycode {
+        border-bottom: 2px solid #D8D8D8;
+        font-size: 18px;
+        float: left;
+
+        input {
+            max-width: 100%;
+        }
+    }
+
+    .country {
+        border-bottom: 2px solid #D8D8D8;
+        font-size: 18px;
+        float: right;
+
+        ion-item {
+            background-color: #f6f6f8;
+        }
+
+        .item-md.item-block .item-inner {
+            border-bottom: 0px solid #dedede;
+        }
+    }
+
+    #phonenumber {
+        border-bottom: 2px solid #D8D8D8;
+        font-size: 18px;
+        float: right;
+    }
+
+    .help-block {
+        margin-top: 10px;
+        color: darkred;
+        font-size: 1.3rem;
+    }
+
+    .login-button {
+        margin-top: 0px;
+        padding: 25px 0px;
+        font-size: 14px;
+    }
+
+    .footer {
+        background-color: #f6f6f8;
+    }
+}

@@ -1,0 +1,213 @@
+{
+  "BACK_BUTTON_TEXT": "Back",
+  "COUNTRIES_TITLE": "COUNTRY",
+  "NAME": "Name",
+  "EMAIL": "Email",
+  "USERNAME": "Username",
+  "PASSWORD": "Password",
+  "LOGIN": "Sign in",
+  "SIGNUP": "Sign up",
+  "LOGOFF": "Logoff",
+
+  "TAB1_TITLE": "Home",
+  "TAB2_TITLE": "Search",
+  "TAB3_TITLE": "Settings",
+
+  "MAP_TITLE": "Map",
+
+  "TUTORIAL_SKIP_BUTTON": "Skip",
+  "TUTORIAL_CONTINUE_BUTTON": "Continue",
+
+  "TUTORIAL_SLIDE1_TITLE": "Welcome to the Ionic Super Starter",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "The <b>Ionic Super Starter</b> is a fully-featured Ionic starter with many pre-built pages and best practices.",
+
+  "TUTORIAL_SLIDE2_TITLE": "How to use the Super Starter",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "Assemble the various page types you want and remove the ones you don't. We've provided many common mobile app page layouts, like login and signup pages, tabs, and this tutorial page.",
+
+  "TUTORIAL_SLIDE3_TITLE": "Getting Started",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "Need help? Check out the Super Starter README for a full tutorial",
+
+  "TUTORIAL_SLIDE4_TITLE": "Ready to Play?",
+
+  "WELCOME_INTRO": "The starting point for your next great Ionic app",
+
+  "SETTINGS_TITLE": "Settings",
+  "SETTINGS_NAME": "Name",
+  "SETTINGS_LANGUAGE": "Language",
+  "SETTINGS_GENERAL_SETTINGS": "General Settings",
+  "SETTINGS_PROFILE_BUTTON": "Edit Profile",
+
+  "SETTINGS_PAGE_PROFILE": "Edit Profile",
+
+  "WELCOME_TITLE": "Welcome",
+  "WELCOME_BACK": "Welcome back",
+
+  "REGISTER_TITLE": "Register",
+  "REGISTER_PHONENUMBER": "Phone Number",
+  "REGISTER_NAME": "Name",
+  "REGISTER_LN": "Language",
+  "REGISTER_SENDVERIFICATIONCODE_TITLE": "Use your phone number that you registered in Gruber system",
+  "REGISTER_PHONENUMBER_LABEL": "PHONE NUMBER",
+
+  "REGISTER_VERIFICATION_MESSAGE": "Enter a verification code which you have recieved from gruber.",
+  "REGISTER_INPUT_PLACEHOLDER_NAME": "Verification Code",
+  "REGISTER_INPUT_BUTTON_VERIFY": "Verify",
+  "REGISTER_VERIFYING_MESSAGE": "Verifiying your code. Please wait...",
+  "REGISTER_VERIFICTION_WRONG_CODE_MESSAGE": "Verification code is wrong!",
+  "REGISTER_VERIFICTION_WRONG_CODE_OK": "OK",
+  "REGISTER_LOADER": "Please wait...",
+  "REGISTER_INPUT_NAME": "VerificationCode",
+  "REGISTER_INPUT_BUTTON_CANCEL": "Cancel",
+  "REGISTER_PRESENT_CONFIRM_TITLE": "Gruber",
+  "REGISTER_PRESENT_CONFIRM_BTN_CANCEL": "Cancel",
+  "REGISTER_PRESENT_CONFIRM_BTN_REGISTER": "Register",
+
+
+  "LOGIN_TITLE": "Login",
+  "LOGIN_SENDVERIFICATIONCODE_TITLE": "Use your phone number that you registered in Gruber system",
+  "LOGIN_PHONENUMBER_LABEL": "PHONE NUMBER",
+  "LOGIN_SENDVERIFICATIONCODE_BUTTON": "CONTINUE",
+
+  "LOGIN_ERROR": "Unable to log in. Please check your account information and try again.",
+  "LOGIN_BUTTON": "Sign in",
+  "LOGGING_YOU": "Logging you... Please wait...",
+  "LOGIN_NOT_REGISTERED_WITH_US": "You are not registered with us. Do you want to register?",
+  "LOGIN_ALREADY_REGISTERED_WITH_ANOTHER_DEVICE": "You are alredy registered on another device. Do you want to register with this device?",
+  "LOGIN_YES_REGISTER": "Yes, Register",
+  "LOGIN_REGISTERING": "Please wait...",
+
+  "SIGNUP_TITLE": "Sign up",
+  "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
+  "SIGNUP_BUTTON": "Sign up",
+
+  "LIST_MASTER_TITLE": "Items",
+
+  "ITEM_CREATE_TITLE": "New Item",
+  "ITEM_CREATE_CHOOSE_IMAGE": "Add Image",
+
+  "ITEM_NAME_PLACEHOLDER": "Name",
+  "ITEM_ABOUT_PLACEHOLDER": "About",
+
+  "DONE_BUTTON": "Done",
+  "CANCEL_BUTTON": "Cancel",
+  "REGISTER_BUTTON": "Register",
+  "DELETE_BUTTON": "Delete",
+
+  "CARDS_TITLE": "Social",
+  "SYNC": " Sync",
+  "SEARCH_TITLE": "Search",
+  "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\"",
+
+  "PROFILE_TITLE": "Profile",
+  "PROFILE_SYNC": "Sync",
+  "PROFILE_QUICKTOOLS": "QUICK TOOLS",
+  "PROFILE_CURRENTACTIVITY": "CURRENT ACTIVITY",
+  "PROFILE_ACTIVITIES": "ACTIVITIES",
+  "PROFILE_MESSAGES": "MESSAGES",
+  "PROFILE_STATISTICS": "STATISTICS",
+  "PROFILE_A_PRODUCTBY": "A Product by",
+
+
+  "ACTIVITYDETAILS_LOADING_OR_UNLOADING_DETAILS": "LOADING / UNLOADING DETAILS",
+  "ACTIVITYDETAILS_GOODSDESCRIPTION": "Goods Description",
+  "ACTIVITYDETAILS_PALETESQAUNTITY": "Paletes Qauntity:",
+  "ACTIVITYDETAILS_CONTAINERSIZE": "Container Size:",
+  "ACTIVITYDETAILS_CONTAINERWEIGHT": "Container Weight:",
+  "ACTIVITYDETAILS_CONTAINERVOLUME": "Container Volume:",
+  "ACTIVITYDETAILS_EVENTSTIMELINE": "EVENTS TIMELINE",
+  "ACTIVITYDETAILS_REQUESTEDDOCUMENTS": "REQUESTED DOCUMENTS",
+  "ACTIVITYDETAILS_ARRIVALATLOADINGPLACE": "Arrival at the loading place",
+
+  "ACTIVITYDETAILS_OK": "OK",
+  "ACTIVITYDETAILS_REQUIRED": "Required",
+  "ACTIVITYDETAILS_OPTIONAL": "Optional",
+
+  "OPEN_ALERT": "OPEN ALERTS",
+  "GET_DIRECTIONS": " GET DIRECTIONS",
+  "SEE_DETAILS": "SEE DETAILS",
+  "NOTES": "Notes:",
+  "CONFIRM": "CONFIRM",
+  "BREAK": "Break",
+  "CALLMANAGER": "Call Manager",
+  "ADD_PHOTO": "Add Photo",
+  "PHOTO": "Photo",
+  "NEW_EVENT": "New Event",
+  "SCAN_DOCUMENT": "Scan Document",
+  "MESSAGE": "Message",
+  "DOCUMENT_IS_MISSING": "is Missing",
+  "SAVE": "Save",
+  "DATA_SAVED_SUCCESSFULLY": "Saved Successfully",
+
+  "ACTIVITYLIST_TITLE": "Activities",
+  "ACTIVITYLIST_DOCUMENTSTATUS": "Document Status",
+  "ACTIVITYLIST_UNLOADINGDETAILS": "Unloading Details",
+  "ACTIVITYLIST_LOADINGDETAILS": "Loading Details",
+  "ACTIVITYLIST_STARTEDLOADING": "Started Loading",
+  "ACTIVITYLIST_ACTIVE": "Active",
+  "ACTIVITYLIST_COMPLETE": "Complete",
+  "ACTIVITYLIST_NO_ACTIVE_ACTIVITY": "There is no any active or open activity.",
+  "ACTIVITYLIST_NO_COMPLETED_ACTIVITY": "There is no any completed activity.",
+
+
+  "SYNCING_LABEL": "Syncing data. <br/>Please wait...",
+  "LOADING_LABEL": "Loading data. <br/>Please wait...",
+  "SAVING_LABEL": "Saving data. <br/>Please wait...",
+
+  "NOTIFICATIONS_TITLE": "Notifications",
+  "NOTIFICATION_NO_RECORDS_MESSAGE": "There is no notification records!",
+
+  "CONFIRM_ACTIVITY_TITLE": "Confirm arrival at Loading Place?",
+  "CONFIRM_ACTIVITY_NO_CANCEL": "No, Cancel",
+  "CONFIRM_ACTIVITY_YES_CONFIRM": "Yes, Confirm",
+  "CONFIRM_ACTIVITY_SUCCESS": "Success",
+  "CONFIRM_ACTIVITY_ButtonText": "OK",
+
+  "DOCUMENT_SCAN_BARCODE_SCANNED_MESSAGE": "Good, the barcode has been read. Please take a picture of the whole document",
+  "CHAT_CONTACTS_TITLE": "Chat Contacts",
+  "CHAT_MESSAGE_TITLE": "Messages",
+  "DOCUMENTSCAN_BARCODENUMBER": "Barcode Number :",
+  "DOCUMENT_SCAN_BARCODE_SCANNED_TITLE": "Success",
+  "DOCUMENT_SCAN_BARCODE_SCANNED_OK": "Ok",
+
+  "UPLOAD_PICTURE_CHANGEPICTURE_TITLE": "upload picture",
+  "UPLOAD_PICTURE_CHANGEPICTURE_CAMERA": "camera",
+  "UPLOAD_PICTURE_CHANGEPICTURE_GALLARY": "gallery",
+  "UPLOAD_PICTURE_CHANGEPICTURE_IMAGE": "image",
+  "UPLOAD_PICTURE_CHANGEPICTURE_CAMERAROLL": "camera roll",
+  "UPLOAD_PICTURE_CHANGEPICTURE_CANCEL": "cancel",
+  "UPLOAD_PICTURE_CHANGEPICTURE_CLOSE": "close",
+
+  "CURRENT_ACTIVITY_GRUBER_TITLE": "gruber",
+  "CURRENT_ACTIVITY_GRUBER_MESSAGE": "There is no current activity assigned to you.",
+
+  "CURRENT_ACTIVITY_GRUBER_ADD_PHOTO_TITLE": "Choose document to upload.",
+  "CURRENT_ACTIVITY_GRUBER_ADD_PHOTO_BTN_CANCEL": "cancel",
+  "CURRENT_ACTIVITY_GRUBER_ADD_PHOTO_BTN_OK": "ok",
+  "CURRENT_ACTIVITY_GRUBER_SCAN_DOC_TITLE": "Choose document to upload.",
+  "CURRENT_ACTIVITY_GRUBER_SCAN_DOC_BTN_CANCEL": "cancel",
+  "CURRENT_ACTIVITY_GRUBER_SCAN_DOC_BTN_OK": "ok",
+  "CURRENT_ACTIVITY_GRUBER_CREATE_ACTIVITY_BTN_CANCEL": "cancel",
+  "CURRENT_ACTIVITY_GRUBER_CREATE_ACTIVITY_BTN_OK": "Ok",
+  "CURRENT_ACTIVITY_GRUBER_BREAK_ACTIVITY_TITLE": "Choose the Break Activity",
+  "CURRENT_ACTIVITY_GRUBER_EVENT_ACTIVITY_TITLE": "Choose the New Event Activity",
+
+  "ACTIVITY_DETAILS_BREAK_ACTIVITY_TITLE": "Choose the Break Activities",
+  "ACTIVITY_DETAILS_EVENT_ACTIVITY_TITLE": "Choose the New Event Activities",
+  "ACTIVITY_DETAILS_PHOTO_ACTIVITY_TITLE": "Choose document to upload.",
+  "ACTIVITY_DETAILS_BREAK_ACTIVITY_MESSAGE": "There is a Activity is pending to confirm, Please confirm the Break Activity.",
+  "ACTIVITY_DETAILS_CREATE_ACTIVITY_BTN_CANCEL": "Cancel",
+  "ACTIVITY_DETAILS_CREATE_ACTIVITY_BTN_OK": "Ok",
+  "ACTIVITY_DETAILS__PHOTO_ACTIVITY_BTN_CANCEL": "Cancel",
+  "ACTIVITY_DETAILS__PHOTO_ACTIVITY_BTN_OK": "Ok",
+  "ACTIVITY_DETAILS_MESSAGE_ACTIVITY_TITLE": "loading. <br/>please wait...",
+
+  "PROFILE_SHOW_ALERT_TITLE": "Gruber",
+  "PROFILE_SHOW_ALERT_SUBTITLE": "There is no current activity assigned to you.",
+
+  "TERMS_TITLE": "Terms of License and Use",
+  "TERMS_DISCRIPTION_1": "The University of Law encourages you to post your comments on the Future Lawyers Network website and its other websites where prompted and welcomes your feedback.For comments that do not comply with these Terms of Use we reserve the right to remove them.The University reserves the right to reproduce, publish and use any and all parts of any posting in any way it sees fit.By accepting these Terms of Use you agree to not post any material that a reasonable person would consider:",
+  "TERMS_DISCRIPTION_2": "As including any racial, sexual or other offensive, provocative or discriminatory language",
+  "TERMS_DISCRIPTION_3": "Is inappropriate to discuss within a forum which has users under the age of 18",
+  "TERMS_DISCRIPTION_4": "Is defamatory, abusive, harassing or hateful and capable of damaging the reputation of a person or organisation.If successfully sued you could be held liable for considerable damages and costs"
+
+}

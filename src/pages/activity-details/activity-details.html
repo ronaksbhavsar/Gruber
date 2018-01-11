@@ -1,0 +1,195 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            {{MobTripData.mobTripDetail.t_company}}-{{MobTripData.mobTripDetail.t_number}}/{{MobTripData.mobTripDetail.t_branch}}/{{MobTripData.mobTripDetail.t_year}}
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="goToOtherPage('NotificationsListPage')">
+                <ion-icon name="ios-notifications-outline"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ng-container *ngFor="let missingDoc of MobTripData.tripReqDocumentData; let i = index;">
+        <!--<ion-label *ngIf="missingDoc.td_datetime==null && missingDoc.td_required==1;then dateTimeAndRequired"></ion-label>-->
+        <!--<ng-template #dateTimeAndRequired>-->
+        <ng-container *ngIf="missingDoc.td_datetime == null && missingDoc.td_required==1;">
+            <div class="warning-block">
+                <ion-icon class="notification-icon" name="information-circle"></ion-icon>
+                {{missingDoc.d_description}} {{'DOCUMENT_IS_MISSING' | translate}}
+                <a class="scan-document" title="{{missingDoc.d_description}}"
+                   (click)="createDocument(missingDoc)">{{'SCAN_DOCUMENT' | translate}}</a>
+            </div>
+        </ng-container>
+        <!--</ng-template>-->
+    </ng-container>
+
+    <div class="activity-map">
+        <span *ngIf="MobTripData.mobTripDetail.t_mapImage"> 
+        <img src="{{MobTripData.mobTripDetail.t_mapImage}}" /> </span>
+        <!--<img src="assets/img/demo-map.png" />-->
+        <ion-fab center middle >
+            <button ion-fab small color="danger">
+            <ion-icon name="notifications"></ion-icon></button>
+        </ion-fab>
+
+        <!--<ion-fab center middle>
+            <button ion-fab ion-button small color="danger" class="open-alert">
+                {{'OPEN_ALERT' | translate}}
+                <ion-icon name="notifications"></ion-icon>
+            </button>
+        </ion-fab>-->
+    </div>
+    <!--<div id="map"></div>-->
+    <button ion-button no-margin large full color="dark">
+        <ion-icon name="md-return-right"></ion-icon>{{'GET_DIRECTIONS' | translate}}
+    </button>
+
+    <ion-item-divider class="header-block b-bottom">
+        {{'ACTIVITYDETAILS_LOADING_OR_UNLOADING_DETAILS' | translate}}
+    </ion-item-divider>
+
+    <section id="cd-timeline" class="cd-container">
+        <div *ngFor="let option of MobTripData.tripLoadUnLoadData; let i = index;">
+            <div class="cd-timeline-block">
+                <div [ngClass]="i%2===0 ? 'cd-timeline-icon activity-green' : 'cd-timeline-icon activity-yellow'">
+                </div>
+                <div class="cd-timeline-content">
+                    <p class="marginTop5">{{option.tl_dtTimeEstimate | date:'dd'}} <ion-icon name="md-calendar"></ion-icon> {{option.tl_dtTimeEstimate | date:'MMMM'}}, {{option.tl_dtTimeEstimate | date:'y'}} {{option.tl_dtTimeEstimate | date:'HH:mm'}} <ion-icon name="md-time"></ion-icon></p>
+                    <p class="timelineText">{{option.tl_placeDescription}} <ion-icon name="md-pin"></ion-icon> {{option.tl_placeAddress}},{{option.tl_placeZip}},{{option.tl_placeCity}},{{option.tl_placeNation}}</p>
+
+                    <ion-label class="notes-label">
+                        {{'NOTES' | translate}}
+                    </ion-label>
+                    <p class="notes-description">{{option.tl_notes}}</p>
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <ion-item-divider class="header-block b-top b-bottom" (click)="showDetails()">
+        {{'ACTIVITYDETAILS_GOODSDESCRIPTION' | translate}}
+        <ion-icon item-end name="ios-arrow-down" *ngIf="isgoodsDescriptionShow"></ion-icon>
+        <ion-icon item-end name="ios-arrow-back" *ngIf="!isgoodsDescriptionShow"></ion-icon>
+    </ion-item-divider>
+    <ion-item class="goods-desc" *ngIf="isgoodsDescriptionShow" id="goodsDescription">
+        <ion-row>
+            <ion-col col-6 class="notes-description">
+                {{'ACTIVITYDETAILS_PALETESQAUNTITY' | translate}}
+            </ion-col>
+            <ion-col col-6 class="notes-description">
+                {{'ACTIVITYDETAILS_CONTAINERSIZE' | translate}}
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6 class="notes-label">
+                {{MobTripData.tripGoodsDescData.tg_quantity}}
+            </ion-col>
+            <ion-col col-6 class="notes-label">
+                {{MobTripData.tripGoodsDescData.tg_uom}}{{'Meters' | translate}}
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6 class="notes-description">
+                {{'ACTIVITYDETAILS_CONTAINERWEIGHT' | translate}}
+            </ion-col>
+            <ion-col col-6 class="notes-description">
+                {{'ACTIVITYDETAILS_CONTAINERVOLUME' | translate}}
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6 class="notes-label">
+
+            </ion-col>
+            <ion-col col-6 class="notes-label">
+                {{MobTripData.tripGoodsDescData.tg_width * MobTripData.tripGoodsDescData.tg_height * MobTripData.tripGoodsDescData.tg_length}} CM
+            </ion-col>
+        </ion-row>
+    </ion-item>
+
+    <ion-item-divider class="header-block b-top b-bottom">
+        {{'ACTIVITYDETAILS_EVENTSTIMELINE' | translate}}
+    </ion-item-divider>
+
+    <ion-list class="event-timeline">
+        <ion-item *ngFor="let trip of MobTripData.tripTimeLineData;">
+            <img item-start src="{{trip.a_icon}}" />
+            <p>
+                {{trip.eventDatetime | date:"dd MM yyyy" | lowercase}}
+                <ion-icon name="md-time"></ion-icon>
+                {{trip.eventDatetime | date:'HH:mm'| lowercase}}
+            </p>
+            <h4 class="event-desc">{{trip.a_description | translate}}</h4>
+            <button ion-button item-end color="green" class="btn-confirm"
+                    (click)="confirmActivity(trip)" *ngIf="trip.tl_dtInsert == null;">
+                {{'CONFIRM' | translate}}
+            </button>
+        </ion-item>
+    </ion-list>
+
+    <ion-item-divider class="header-block b-top b-bottom">
+        {{'ACTIVITYDETAILS_REQUESTEDDOCUMENTS' | translate}}
+    </ion-item-divider>
+    <ion-list class="doc-list">
+        <button ion-item icon-start (click)="createDocument(tripDocument)" *ngFor="let tripDocument of MobTripData.tripReqDocumentData; let i = index;">
+            <ion-label>{{tripDocument.d_description}}</ion-label>
+            <ion-label *ngIf="tripDocument.td_datetime;then dateTimeCondition"></ion-label>
+            <ng-template #dateTimeCondition>
+                <ion-icon name="attach" item-end rota></ion-icon>
+                <ion-note item-end color="secondary">{{'ACTIVITYDETAILS_OK' | translate}}</ion-note>
+            </ng-template>
+
+            <ion-label *ngIf="tripDocument.td_datetime==null && tripDocument.td_required==1;then dateTimeAndRequired"></ion-label>
+            <ng-template #dateTimeAndRequired>
+                <ion-icon item-end></ion-icon>
+                <ion-note item-end color="danger">{{'ACTIVITYDETAILS_REQUIRED' | translate}}</ion-note>
+            </ng-template>
+
+            <ion-label *ngIf="tripDocument.td_datetime==null && tripDocument.td_required==0;then dateTimeAndRequiredNull"></ion-label>
+            <ng-template #dateTimeAndRequiredNull>
+                <ion-icon item-end></ion-icon>
+                <ion-note item-end color="blue">{{'ACTIVITYDETAILS_OPTIONAL' | translate}}</ion-note>
+            </ng-template>
+        </button>
+    </ion-list>
+</ion-content>
+<ion-footer> 
+    <ion-row class="activity-actions">
+        <ion-col col-2 center>
+            <button class="action-button" (click)="breakActivity()" [disabled]="MobTripData.mobTripDetail.activityStatus == 'COMPLETED'">
+                <img src="assets/img/custom-icons/break.png" />
+                <ion-label class="action-label" text-center>{{'BREAK' | translate}}</ion-label>
+            </button>
+        </ion-col>
+        <ion-col col-3>
+            <button class="action-button" (click)="callManagerActivity(MobTripData.mobTripDetail.dp_phone)">
+                <img src="assets/img/custom-icons/call-manager.png" />
+                <ion-label class="action-label" text-center>{{'CALLMANAGER' | translate}}</ion-label>
+            </button>
+        </ion-col>
+        <ion-col col-2>
+            <button class="action-button" (click)="photoActivity()" [disabled]="MobTripData.mobTripDetail.activityStatus == 'COMPLETED'">
+                <img src="assets/img/custom-icons/photo.png" />
+                <!--<ion-icon name="photos"></ion-icon>-->
+                <ion-label class="action-label" text-center>{{'PHOTO' | translate}}</ion-label>
+            </button>
+        </ion-col>
+        <ion-col col-2>
+            <button class="action-button" (click)="messageActivity(MobTripData.mobTripDetail)">
+                <img src="assets/img/custom-icons/message.png" />
+                <ion-label class="action-label" text-center>{{'MESSAGE' | translate}}</ion-label>
+            </button>
+        </ion-col>
+        <ion-col col-3>
+            <button class="action-button" (click)="newEventActivity()" [disabled]="MobTripData.mobTripDetail.activityStatus == 'COMPLETED'">
+                <img src="assets/img/custom-icons/new-event.png" />
+                <ion-label class="action-label" text-center>{{'NEW_EVENT' | translate}}</ion-label>
+            </button>
+        </ion-col>
+    </ion-row>
+</ion-footer>
+

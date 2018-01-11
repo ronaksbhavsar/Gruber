@@ -1,0 +1,47 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            {{'NOTIFICATIONS_TITLE' | translate}}
+        </ion-title>
+
+        <!--<ion-buttons end>
+            <button ion-button icon-only>
+                <ion-icon name="ios-notifications-outline"></ion-icon>
+            </button>
+        </ion-buttons>-->
+        <ion-buttons end>
+            <button ion-button icon-only (click)="syncData()">
+                <ion-icon name="ios-refresh-outline"></ion-icon>
+                {{'SYNC' | translate}}
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+
+    <div class="activity-status">
+
+    </div>
+</ion-header>
+
+<ion-content class="chats">
+    <ion-list>
+        <ng-container *ngIf="notifications.length > 0;else notificationBlock;">
+            <ion-item *ngFor="let notification of notifications">
+                <ion-avatar item-start class="notification-date">
+                    <span>{{notification.n_notificationRead | date:'MMM'}}</span><br />
+                    <span>{{notification.n_notificationRead | date:'dd'}}</span>
+                </ion-avatar>
+                <h2>{{notification.n_notificationMessage | translate}} </h2>
+                <ion-note item-end color="primary">
+                    <ion-icon name="md-time"></ion-icon>
+                    {{notification.n_notificationRead | date:"hh:mm a" | lowercase}}
+                </ion-note>
+            </ion-item>
+        </ng-container>
+        <ng-template #notificationBlock>
+            <ion-item class="notification-message">
+                <h2>{{'NOTIFICATION_NO_RECORDS_MESSAGE' | translate}}</h2>
+            </ion-item>
+        </ng-template>
+
+    </ion-list>
+</ion-content>

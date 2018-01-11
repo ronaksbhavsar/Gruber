@@ -1,0 +1,27 @@
+page-picture-upload {
+    ion-content {
+        text-align: center;
+    }
+
+    ion-avatar img,
+    ion-thumbnail img {
+        display: block;
+        margin: 0 auto;
+        width: 25vh;
+        height: auto;
+    }
+
+    .mb70 {
+        margin-bottom: 70px;
+    }
+
+    .uploaded-img {
+        img {
+            border: 2px solid #08B0B1;
+        }
+
+        ion-col[col-2] {
+            padding: 2px;
+        }
+    }
+}

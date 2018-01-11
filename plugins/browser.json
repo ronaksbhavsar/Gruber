@@ -1,0 +1,80 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "call-number": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-background-geolocation-lt": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-background-mode": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-ms-azure-mobile-apps": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-sms": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "phonegap-plugin-push": {
+      "SENDER_ID": "1092171990852",
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    }
+  },
+  "dependent_plugins": {
+    "com.googlemaps.ios": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-background-fetch": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-mauron85-background-geolocation": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    }
+  }
+}

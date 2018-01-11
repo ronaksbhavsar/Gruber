@@ -1,0 +1,224 @@
+page-profile { 
+
+    #profile-image {
+        display: block;
+        border-radius: 50%;
+        width: auto;
+        height: 70px;
+        margin: 0 auto 0;
+        -webkit-box-shadow: 0px 11px 20px -3px rgba(142, 136, 146, 0.75);
+        box-shadow: 0px 11px 20px -3px rgba(142, 136, 146, 0.75);
+    }
+
+    #profile-info {
+        position: absolute;
+        top: -105px;
+        width: 100%;
+        z-index: 2;
+        text-align: center;
+    }
+
+    #profile-name {
+        margin: 0rem;
+        color: #FFFFFF;
+        font-size: 17px;
+    }
+
+    .welcome-back {
+        font-size: 12px;
+        margin-top: -15px;
+    }
+
+    .quick-tools {
+        padding: 15px 0px 25px 0px;
+        color: #4A4A4A;
+    }
+
+    .item-block {
+        text-align: center;
+        display: block;
+        font-weight: 500;
+        padding: 15px 0px 20px 0px;
+        color: #4A4A4A;
+    }
+
+    .img-icon {
+        margin-top: 20px;
+    }
+
+
+
+    .footer {
+        background-color: #EDECEE;
+        filter: blur(0px) grayscale(1) opacity(0.7);
+
+        img {
+            vertical-align: middle;
+        }
+    }
+
+    p {
+        margin: 5px;
+        color: #FFFFFF;
+    }
+
+    .settings-button {
+        text-transform: none;
+        border-radius: 50% !important;
+        top: -28px;
+        color: #FFFFFF;
+        background-color: #248E8F;
+        width: 35px;
+        border: 5px solid #08b0b1;
+        height: 35px;
+        right: -29px;
+
+        ion-icon {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: white;
+        }
+    }
+
+    ion-content {
+        background: linear-gradient(0deg, #eeeef1 0%, white 80%, white 100%);
+    }
+
+    button,
+    ion-button,
+    .button-md,
+    .button-ios {
+        text-transform: none !important;
+        box-shadow: none;
+    }
+    // Cover image
+    #profile-bg {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        margin-top: -16px;
+        height: 215px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        background-color: #08B0B1;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    // Profile content
+    #content {
+        position: relative;
+        margin-top: 100px;
+        padding-top: 115px;
+        text-align: center;
+    }
+
+
+
+    .profile-description {
+        font-size: 15px;
+        color: #888;
+    }
+
+    .notification-button {
+        text-transform: none;
+        border-radius: 3px !important;
+        float: left;
+        color: #FFFFFF;
+        background-color: #08b0b1;
+
+        ion-icon {
+            font-weight: bold;
+            padding-left: 5px;
+            font-size: 2.5rem;
+        }
+    }
+
+    .sync-button {
+        text-transform: none;
+        border-radius: 3px !important;
+        float: right;
+        color: #FFFFFF;
+        background-color: #08b0b1;
+
+        ion-icon {
+            font-weight: bold;
+            padding-left: 5px;
+            font-size: 2.5rem;
+        }
+    }
+
+    .follow-button {
+        text-transform: none;
+        border-radius: 3px !important;
+
+        ion-icon {
+            font-weight: bold;
+            padding-left: 5px;
+            font-size: 2.5rem;
+        }
+    }
+
+    ion-icon {
+        font-size: 4.2em;
+    }
+
+    .quick-tools {
+        font-weight: 500;
+    }
+
+    .main-features {
+        color: #3cc59a;
+    }
+
+    .grid {
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .row {
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+
+
+    .b-right {
+        border-right: 1px solid #D8D8D8;
+    }
+
+    .b-bottom {
+        border-bottom: 1px solid #D8D8D8;
+    }
+    // Following, Followers and all..
+    .profile-numbers {
+        p {
+            color: #444;
+            font-size: medium;
+            margin-bottom: 3px;
+        }
+
+        span {
+            font-weight: bold;
+            font-size: 2.4rem;
+            color: #34354c;
+        }
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background: #444;
+        background: -webkit-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, rgb(188, 198, 214) 50%, hsla(0, 0%, 0%, 0) 100%);
+    }
+}

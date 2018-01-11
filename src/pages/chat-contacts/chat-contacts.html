@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            {{'CHAT_CONTACTS_TITLE' | translate}}
+        </ion-title>
+      
+        <ion-buttons end>
+            <button ion-button icon-only item-end >
+                <ion-icon name="ios-notifications-outline" (click)="goToOtherPage('NotificationsListPage')"></ion-icon>
+            </button>
+            <button ion-button icon-only item-end (click)="syncData()">
+                <ion-icon name="ios-refresh-outline"></ion-icon>
+                {{'SYNC' | translate}}
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+    <ion-toolbar>
+        <ion-searchbar class="searchbox" [(ngModel)]="userFilter.dp_name"></ion-searchbar>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="chats">
+    
+    <ion-list>
+        <!--<ion-list-header>Contacts</ion-list-header>-->
+        <ion-item *ngFor="let chat of userChatList | filterBy: userFilter" (click)="viewMessages(chat)">
+            <ion-avatar item-start class="profile-picture" [ngStyle]="generateUserIcon(chat.dp_name.charAt(0))">
+                <span>{{chat.dp_name.charAt(0)}}</span>
+            </ion-avatar>
+            <h2>{{chat.dp_name}}</h2>
+            <p>{{chat.dp_phone}}</p>
+        </ion-item>
+    </ion-list>
+   
+</ion-content>
