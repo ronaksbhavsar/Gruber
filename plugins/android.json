@@ -1,0 +1,32 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "call-number": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-background-geolocation-lt": {
+      "LICENSE": "254662a11d1b985b4bcf9e9c9cb15a2d72a05f1ba2b2fa1b51a26c52b059dbc4",
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    }
+  },
+  "dependent_plugins": {
+    "com.googlemaps.ios": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-background-fetch": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    }
+  }
+}

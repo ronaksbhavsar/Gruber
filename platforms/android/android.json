@@ -1,0 +1,124 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"CallNumber\"><param name=\"android-package\" value=\"com.rohithvaranasi.callnumber.CFCallNumber\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"BackgroundGeolocation\"><param name=\"android-package\" value=\"com.transistorsoft.cordova.bggeo.CDVBackgroundGeolocation\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Permissions\"><param name=\"android-package\" value=\"com.android.plugins.Permissions\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.CALL_PHONE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-feature android:name=\"android.hardware.telephony\" android:required=\"false\" />",
+              "count": 1
+            }
+          ],
+          "/manifest/application": [
+            {
+              "xml": "<meta-data android:name=\"com.transistorsoft.locationmanager.license\" android:value=\"254662a11d1b985b4bcf9e9c9cb15a2d72a05f1ba2b2fa1b51a26c52b059dbc4\" />",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "call-number": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "com.googlemaps.ios": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-background-fetch": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-background-geolocation-lt": {
+      "LICENSE": "254662a11d1b985b4bcf9e9c9cb15a2d72a05f1ba2b2fa1b51a26c52b059dbc4",
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.gruberlogistics.driverapp"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "call-number.CallNumber",
+      "file": "plugins/call-number/www/CallNumber.js",
+      "pluginId": "call-number",
+      "clobbers": [
+        "call"
+      ]
+    },
+    {
+      "id": "cordova-plugin-background-fetch.BackgroundFetch",
+      "file": "plugins/cordova-plugin-background-fetch/www/BackgroundFetch.js",
+      "pluginId": "cordova-plugin-background-fetch",
+      "clobbers": [
+        "window.BackgroundFetch"
+      ]
+    },
+    {
+      "id": "cordova-background-geolocation-lt.BackgroundGeolocation",
+      "file": "plugins/cordova-background-geolocation-lt/www/BackgroundGeolocation.js",
+      "pluginId": "cordova-background-geolocation-lt",
+      "clobbers": [
+        "window.BackgroundGeolocation"
+      ]
+    },
+    {
+      "id": "cordova-plugin-android-permissions.Permissions",
+      "file": "plugins/cordova-plugin-android-permissions/www/permissions.js",
+      "pluginId": "cordova-plugin-android-permissions",
+      "clobbers": [
+        "cordova.plugins.permissions"
+      ]
+    },
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "call-number": "0.0.2",
+    "com.googlemaps.ios": "2.5.0",
+    "cordova-plugin-background-fetch": "5.1.1",
+    "cordova-background-geolocation-lt": "2.8.5",
+    "cordova-plugin-android-permissions": "1.0.0",
+    "cordova-plugin-device": "1.1.4"
+  }
+}

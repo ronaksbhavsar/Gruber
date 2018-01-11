@@ -1,0 +1,59 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            {{ tripData.d_description | translate}}
+        </ion-title>
+
+        <ion-buttons end>
+            <button ion-button (click)="cancel()">
+                {{'CANCEL_BUTTON' | translate}}
+            </button>
+        </ion-buttons>
+        <ion-buttons end>
+            <button [disabled]="deleteflag" ion-button icon-only (click)="deleteDocument()">
+                <ion-icon name="ios-trash-outline"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-buttons end>
+            <button ion-button icon-only>
+                <ion-icon name="ios-crop-outline"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-buttons end>
+            <button [disabled]="documentImagesData.length <= 0" ion-button (click)="savePicture(pageName)">
+                {{'SAVE' | translate}}
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-row>
+        <ion-col col-12 (click)="changePicture()">
+            <img [src]="uplodimage || placeholder" />
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-1>
+        </ion-col>
+        <ion-col col-10>
+            <ion-fab right>
+                <button [disabled]="selecteImage" ion-fab (click)="selectPicture(pageName)"><ion-icon name="md-send"></ion-icon></button>
+            </ion-fab>
+            <ion-input [disabled]="selecteImage" placeholder="Enter Remarks here.." [(ngModel)]="remarks"></ion-input>
+        </ion-col>
+        <ion-col col-1>
+
+        </ion-col>
+    </ion-row>
+
+    <div class="mb70"></div>
+    <ion-row class="uploaded-img">
+        <ng-container *ngIf="documentImagesData.length > 0">
+            <ion-col col-2 *ngFor="let image of this.documentImagesData; let i = index;">
+                <ion-avatar item-start (click)="documentPreview(image)">
+                    <img src="{{image.td_document}}" />
+                </ion-avatar>
+            </ion-col>
+        </ng-container>
+    </ion-row>
+</ion-content>

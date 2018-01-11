@@ -1,0 +1,40 @@
+
+<ion-content class="confirm-modal">
+    <div text-center>
+        <img class="confirm-icon" item-start src="assets/img/confirm-arrival.png" />
+    </div>
+    <h3 class="confirm-title">
+        {{'CONFIRM_ACTIVITY_TITLE' | translate}}
+    </h3>
+
+    <div class="confirm-datetime">
+        <ion-row>
+            <ion-col col-1></ion-col>
+            <ion-col col-1>
+                <ion-icon color="primary" name="md-calendar"></ion-icon>
+            </ion-col>
+            <ion-col col-5>
+                <ion-datetime item-end placeholder="MM-DD-YYYY" pickerFormat="MM-DD-YYYY" [(ngModel)]="tlDateTime" [disabled]="isDisabled"></ion-datetime>
+            </ion-col>
+            <ion-col col-4>
+                <ion-datetime item-start placeholder="hh:mm A" pickerFormat="hh:mm A" [(ngModel)]="tlDateTime" [disabled]="isDisabled"></ion-datetime>
+            </ion-col>
+            <ion-col col-1></ion-col>
+        </ion-row>
+
+    </div>
+</ion-content>
+<ion-footer>
+    <ion-row>
+        <ion-col col-6 text-center class="btn-cancel">
+            <button ion-button full color="light" (click)="close()">
+                {{'CONFIRM_ACTIVITY_NO_CANCEL' | translate}}
+            </button>
+        </ion-col>
+        <ion-col col-6 text-center class="btn-confirm">
+            <button ion-button full (click)="confirm(pageName)">
+                {{'CONFIRM_ACTIVITY_YES_CONFIRM' | translate}}
+            </button>
+        </ion-col>
+    </ion-row>
+</ion-footer>

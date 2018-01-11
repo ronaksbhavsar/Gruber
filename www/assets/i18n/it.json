@@ -1,0 +1,218 @@
+{
+  "BACK_BUTTON_TEXT": "Indietro",
+  "COUNTRIES_TITLE": "NAZIONE",
+  "NAME": "Nome",
+  "EMAIL": "E-mail",
+  "USERNAME": "Nome utente",
+  "PASSWORD": "Parola d'ordine",
+  "LOGIN": "registrati",
+  "SIGNUP": "Iscriviti",
+  "LOGOFF": "Disconnettersi",
+
+  "TAB1_TITLE": "Casa",
+  "TAB2_TITLE": "Ricerca",
+  "TAB3_TITLE": "impostazioni",
+
+  "MAP_TITLE": "Carta geografica",
+
+  "TUTORIAL_SKIP_BUTTON": "Salta",
+  "TUTORIAL_CONTINUE_BUTTON": "Continua",
+
+  "TUTORIAL_SLIDE1_TITLE": "Benvenuto in Ionic Super Starter",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "Il <b> Ionic Super Starter </ b> è un avviatore ionico completo di molte pagine e best practice predefinite.",
+
+  "TUTORIAL_SLIDE2_TITLE": "Come usare il Super Starter",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "Assembla i vari tipi di pagina che vuoi e rimuovi quelli che non hai. Abbiamo fornito molti layout di pagina per app mobili comuni, come pagine di accesso e registrazione, schede e questa pagina di tutorial.",
+
+  "TUTORIAL_SLIDE3_TITLE": "Iniziare",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "Ho bisogno di aiuto? Dai un'occhiata al README Super Starter per un tutorial completo",
+
+  "TUTORIAL_SLIDE4_TITLE": "Pronto a giocare?",
+
+  "WELCOME_INTRO": "Il punto di partenza per la tua prossima fantastica app Ionic",
+
+  "SETTINGS_TITLE": "impostazioni",
+  "SETTINGS_NAME": "Nome",
+  "SETTINGS_LANGUAGE": "linguaggio",
+  "SETTINGS_GENERAL_SETTINGS": "impostazioni generali",
+  "SETTINGS_PROFILE_BUTTON": "Modifica Profilo",
+
+  "SETTINGS_PAGE_PROFILE": "Modifica Profilo",
+
+  "WELCOME_TITLE": "benvenuto",
+  "WELCOME_BACK": "Ben tornato",
+
+  "REGISTER_TITLE": "Registrare",
+  "REGISTER_PHONENUMBER": "Numero di telefono",
+  "REGISTER_NAME": "Nome",
+  "REGISTER_LN": "linguaggio",
+  "REGISTER_SENDVERIFICATIONCODE_TITLE": "Usa il tuo numero di telefono che hai registrato nel sistema Gruber",
+  "REGISTER_PHONENUMBER_LABEL": "NUMERO DI TELEFONO",
+
+  "REGISTER_VERIFICATION_MESSAGE": "Inserisci un codice di verifica che hai ricevuto da gruber.",
+  "REGISTER_INPUT_PLACEHOLDER_NAME": "Codice di verifica",
+  "REGISTER_INPUT_BUTTON_VERIFY": "Verificare",
+  "REGISTER_VERIFYING_MESSAGE": "Verifica il tuo codice. Attendere prego...",
+  "REGISTER_VERIFICTION_WRONG_CODE_MESSAGE": "Il codice di verifica è sbagliato!",
+  "REGISTER_VERIFICTION_WRONG_CODE_OK": "OK",
+  "REGISTER_LOADER": "Attendere prego...",
+  "REGISTER_INPUT_NAME": "Codice di verifica",
+  "REGISTER_INPUT_BUTTON_CANCEL": "Annulla",
+  "REGISTER_PRESENT_CONFIRM_TITLE": "Gruber",
+  "REGISTER_PRESENT_CONFIRM_BTN_CANCEL": "Annulla",
+  "REGISTER_PRESENT_CONFIRM_BTN_REGISTER": "Registrare",
+
+  "LOGIN_TITLE": "Accesso",
+  "LOGIN_SENDVERIFICATIONCODE_TITLE": "Usa il tuo numero di telefono che hai registrato nel sistema Gruber",
+  "LOGIN_PHONENUMBER_LABEL": "NUMERO DI TELEFONO",
+  "LOGIN_SENDVERIFICATIONCODE_BUTTON": "CONTINUA",
+
+
+  "LOGIN_ERROR": "Impossibile accedere. Controlla i dati del tuo account e riprova.",
+  "LOGIN_BUTTON": "registrati",
+
+  "LOGGING_YOU": "Registrazione in corso ... Attendere ...",
+  "LOGIN_NOT_REGISTERED_WITH_US": "Non sei registrato con noi. Vuoi registrarti?",
+  "LOGIN_ALREADY_REGISTERED_WITH_ANOTHER_DEVICE": "Sei già registrato su un altro dispositivo. Vuoi registrarti con questo dispositivo?",
+  "LOGIN_YES_REGISTER": "Sì, registrati",
+  "LOGIN_REGISTERING": "Attendere prego...",
+
+  "SIGNUP_TITLE": "Iscriviti",
+  "SIGNUP_ERROR": "Impossibile creare l'account. Controlla i dati del tuo account e riprova.",
+  "SIGNUP_BUTTON": "Iscriviti",
+
+  "LIST_MASTER_TITLE": "Elementi",
+
+  "ITEM_CREATE_TITLE": "Nuovo oggetto",
+  "ITEM_CREATE_CHOOSE_IMAGE": "Aggiungi immagine",
+
+  "ITEM_NAME_PLACEHOLDER": "Nome",
+  "ITEM_ABOUT_PLACEHOLDER": "Di",
+
+  "DONE_BUTTON": "Fatto",
+  "CANCEL_BUTTON": "Annulla",
+  "REGISTER_BUTTON": "Registrare",
+  "DELETE_BUTTON": "Elimina",
+
+
+
+  "CARDS_TITLE": "Sociale",
+  "SYNC": " Sync",
+  "SEARCH_TITLE": "Ricerca",
+  "SEARCH_PLACEHOLDER": "Cerca nell'elenco degli elementi, ad es. \"Paperino\"",
+
+  "PROFILE_TITLE": "Profilo",
+  "PROFILE_SYNC": "Sync",
+  "PROFILE_QUICKTOOLS": "STRUMENTI RAPIDI",
+  "PROFILE_CURRENTACTIVITY": "ATTIVITÀ CORRENTE",
+  "PROFILE_ACTIVITIES": "ATTIVITA '",
+  "PROFILE_MESSAGES": "MESSAGGI",
+  "PROFILE_STATISTICS": "STATISTICHE",
+  "PROFILE_A_PRODUCTBY": "Un prodotto di",
+
+
+  "ACTIVITYDETAILS_LOADING_OR_UNLOADING_DETAILS": "CARICAMENTO / SCARICAMENTO DETTAGLI",
+  "ACTIVITYDETAILS_GOODSDESCRIPTION": "buona descrizione",
+  "ACTIVITYDETAILS_PALETESQAUNTITY": "Palite Qauntity:",
+  "ACTIVITYDETAILS_CONTAINERSIZE": "Dimensione del contenitore:",
+  "ACTIVITYDETAILS_CONTAINERWEIGHT": "Peso del contenitore:",
+  "ACTIVITYDETAILS_CONTAINERVOLUME": "Volume del contenitore:",
+  "ACTIVITYDETAILS_EVENTSTIMELINE": "TIMELINE EVENTI",
+  "ACTIVITYDETAILS_ARRIVALATLOADINGPLACE": "Arrivo al luogo di carico",
+  "ACTIVITYDETAILS_REQUESTEDDOCUMENTS": "DOCUMENTI RICHIESTI",
+
+  "ACTIVITYDETAILS_OK": "ok",
+  "ACTIVITYDETAILS_REQUIRED": "necessario",
+  "ACTIVITYDETAILS_OPTIONAL": "Opzionale",
+
+  "OPEN_ALERT": "AVVISI APERTI",
+  "GET_DIRECTIONS": " OTTENERE DIREZIONI",
+  "SEE_DETAILS": "GUARDA I DETAGLI",
+  "NOTES": "Gli appunti:",
+  "CONFIRM": "CONFERMARE",
+  "BREAK": "Rompere",
+  "CALLMANAGER": "Call Manager",
+  "ADD_PHOTO": "Aggiungi foto",
+  "PHOTO": "Foto",
+  "NEW_EVENT": "Nuovo evento",
+  "SCAN_DOCUMENT": "Scansione documento",
+  "MESSAGE": "Messaggio",
+  "DOCUMENT_IS_MISSING": "manca",
+  "SAVE": "Salvare",
+  "DATA_SAVED_SUCCESSFULLY": "Salvato con successo",
+
+  "ACTIVITYLIST_TITLE": "attività",
+  "ACTIVITYLIST_DOCUMENTSTATUS": "Stato del documento",
+  "ACTIVITYLIST_UNLOADINGDETAILS": "Dettagli di scarico",
+  "ACTIVITYLIST_LOADINGDETAILS": "Caricamento dei dettagli",
+  "ACTIVITYLIST_STARTEDLOADING": "Caricamento avviato",
+  "ACTIVITYLIST_ACTIVE": "Attivo",
+  "ACTIVITYLIST_COMPLETE": "Completare",
+  "ACTIVITYLIST_NO_ACTIVE_ACTIVITY": "Non ci sono attività attive o aperte.",
+  "ACTIVITYLIST_NO_COMPLETED_ACTIVITY": "Non ci sono attività completate.",
+
+
+  "SYNCING_LABEL": "Sincronizzazione dei dati. <br/> Si prega di attendere ...",
+  "LOADING_LABEL": "Caricamento dati. <br/> Si prega di attendere ...",
+  "SAVING_LABEL": "Salvataggio dei dati. <br/> Si prega di attendere ...",
+
+  "NOTIFICATIONS_TITLE": "notifiche",
+  "NOTIFICATION_NO_RECORDS_MESSAGE": "Non ci sono record di notifica!",
+
+  "CONFIRM_ACTIVITY_TITLE": "Confermare l'arrivo al luogo di carico?",
+  "CONFIRM_ACTIVITY_NO_CANCEL": "No, Annulla",
+  "CONFIRM_ACTIVITY_YES_CONFIRM": "Sì, conferma",
+  "CONFIRM_ACTIVITY_SUCCESS": "Successo",
+  "CONFIRM_ACTIVITY_ButtonText": "OK",
+
+  "DOCUMENT_SCAN_BARCODE_SCANNED_MESSAGE": "Bene, il codice a barre è stato letto. Si prega di fare una foto di tutto il documento",
+  "DOCUMENT_SCAN_BARCODE_SCANNED_TITLE": "Successo",
+  "DOCUMENT_SCAN_BARCODE_SCANNED_OK": "Ok",
+
+  "CHAT_CONTACTS_TITLE": "Contatti chat",
+  "CHAT_MESSAGE_TITLE": "messaggi",
+  "DOCUMENTSCAN_BARCODENUMBER": "Numero di codice a barre:",
+
+  "UPLOAD_PICTURE_CHANGEPICTURE_TITLE": "carica l'immagine",
+  "UPLOAD_PICTURE_CHANGEPICTURE_CAMERA": "telecamera",
+  "UPLOAD_PICTURE_CHANGEPICTURE_GALLARY": "galleria",
+  "UPLOAD_PICTURE_CHANGEPICTURE_IMAGE": "Immagine",
+  "UPLOAD_PICTURE_CHANGEPICTURE_CAMERAROLL": "rullino fotografico",
+  "UPLOAD_PICTURE_CHANGEPICTURE_CANCEL": "Annulla",
+  "UPLOAD_PICTURE_CHANGEPICTURE_CLOSE": "vicino",
+
+  "CURRENT_ACTIVITY_GRUBER_TITLE": "gruber",
+  "CURRENT_ACTIVITY_GRUBER_MESSAGE": "Non vi è alcuna attività corrente assegnata a voi.",
+
+  "CURRENT_ACTIVITY_GRUBER_ADD_PHOTO_TITLE": "Scegli il documento da caricare.",
+  "CURRENT_ACTIVITY_GRUBER_ADD_PHOTO_BTN_CANCEL": "Annulla",
+  "CURRENT_ACTIVITY_GRUBER_ADD_PHOTO_BTN_OK": "ok",
+  "CURRENT_ACTIVITY_GRUBER_SCAN_DOC_TITLE": "Scegli il documento da caricare.",
+  "CURRENT_ACTIVITY_GRUBER_SCAN_DOC_BTN_CANCEL": "Annulla",
+  "CURRENT_ACTIVITY_GRUBER_SCAN_DOC_BTN_OK": "ok",
+  "CURRENT_ACTIVITY_GRUBER_CREATE_ACTIVITY_BTN_CANCEL": "Annulla",
+  "CURRENT_ACTIVITY_GRUBER_CREATE_ACTIVITY_BTN_OK": "Ok",
+  "CURRENT_ACTIVITY_GRUBER_BREAK_ACTIVITY_TITLE": "Scegli l'attività di interruzione",
+  "CURRENT_ACTIVITY_GRUBER_EVENT_ACTIVITY_TITLE": "Scegli la nuova attività di evento",
+  "CURRENT_ACTIVITY_BREAK_ACTIVITY_MESSAGE": "C'è un'attività in attesa di conferma, per favore conferma l'attività di interruzione.",
+
+  "ACTIVITY_DETAILS_BREAK_ACTIVITY_TITLE": "Scegli le attività di interruzione",
+  "ACTIVITY_DETAILS_EVENT_ACTIVITY_TITLE": "Scegli le nuove attività evento",
+  "ACTIVITY_DETAILS_PHOTO_ACTIVITY_TITLE": "Scegli il documento da caricare.",
+  "ACTIVITY_DETAILS_BREAK_ACTIVITY_MESSAGE": "C'è un'attività in attesa di conferma, per favore conferma l'attività di interruzione.",
+  "ACTIVITY_DETAILS_CREATE_ACTIVITY_BTN_CANCEL": "Annulla",
+  "ACTIVITY_DETAILS_CREATE_ACTIVITY_BTN_OK": "Ok",
+  "ACTIVITY_DETAILS__PHOTO_ACTIVITY_BTN_CANCEL": "Annulla",
+  "ACTIVITY_DETAILS__PHOTO_ACTIVITY_BTN_OK": "Ok",
+  "ACTIVITY_DETAILS_MESSAGE_ACTIVITY_TITLE": "Caricamento in corso. <br/> per favore aspetta ...",
+
+  "PROFILE_SHOW_ALERT_TITLE": "Gruber",
+  "PROFILE_SHOW_ALERT_SUBTITLE": "Non vi è alcuna attività corrente assegnata a voi.",
+
+  "TERMS_TITLE": "Termini di licenza e uso",
+  "TERMS_DISCRIPTION_1": "L'Università di diritto ti incoraggia a pubblicare i tuoi commenti sul sito Web della Future Lawyers Network e sugli altri siti Web in cui viene richiesto e accetta il tuo feedback. Per i commenti che non sono conformi alle presenti Condizioni d'Uso, ci riserviamo il diritto di rimuoverli. diritto di riprodurre, pubblicare e utilizzare qualsiasi parte di qualsiasi pubblicazione in qualsiasi modo ritenga opportuno. Accettando le presenti Condizioni d'uso, l'utente accetta di non pubblicare alcun materiale che una persona ragionevole considererebbe:",
+  "TERMS_DISCRIPTION_2": "Compreso qualsiasi linguaggio razziale, sessuale o di altro tipo offensivo, provocatorio o discriminatorio",
+  "TERMS_DISCRIPTION_3": "È inappropriato discuterne all'interno di un forum che ha utenti di età inferiore ai 18 anni",
+  "TERMS_DISCRIPTION_4": "È diffamatorio, offensivo, molesto o odioso e in grado di danneggiare la reputazione di una persona o di un'organizzazione. Se denunciati con successo potresti essere ritenuto responsabile per danni e costi considerevoli"
+
+}

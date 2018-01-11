@@ -1,0 +1,79 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{toUser.username}}</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only item-end (click)="goToOtherPage('NotificationsListPage')">
+                <ion-icon name="ios-notifications-outline"></ion-icon>
+            </button>
+            <button ion-button icon-only item-end (click)="syncData()">
+                <ion-icon name="ios-refresh-outline"></ion-icon>
+                {{'SYNC' | translate}}
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-list class="chat-user">
+        <ion-item>
+            <ion-avatar item-start class="profile-picture">
+                <img [src]="toUser.pic">
+            </ion-avatar>
+            {{toUser.username}}
+        </ion-item>
+    </ion-list>
+
+    <div *ngFor="let message of messages; let i = index" class="message-wrapper" on-hold="onMessageHold($event, $index, message)">
+        <!--| orderBy : 'ms_dtcreation':'asc'-->
+
+        <ng-container *ngIf="messages.length != i+1">
+            <ion-label class="label label-md date-label"
+                       *ngIf="(message.ms_dtcreation | moment:'DD MMM YYYY') < ( messages[i+1].ms_dtcreation |moment:'DD MMM YYYY')">
+                {{message.ms_dtcreation | moment:"DD MMM YYYY" | lowercase}}
+            </ion-label>
+        </ng-container>
+
+        <div *ngIf="user.id !== message.ms_sender">
+            <!--<img (click)="viewProfile(message)" class="profile-pic left" [src]="toUser.pic"/>-->
+            <!--onerror="onProfilePicError(this)"-->
+            <!--  wave-->
+            <div class="chat-bubble left slide-left">
+                <div class="message" [innerHTML]="message.ms_message" autolinker>
+                </div>
+            </div>
+            <div class="cf"></div>
+            <div class="time left slide-left">
+                <span><ion-icon name="md-time"></ion-icon> {{message.ms_dtcreation | moment:"hh:mm a" | lowercase}}</span>
+            </div>
+        </div>
+        <div *ngIf="user.id === message.ms_sender">
+            <!--<img (click)="viewProfile(message)" class="profile-pic right" [src]="user.pic" />-->
+            <!--onerror="onProfilePicError(this)"-->
+            <div class="chat-bubble right slide-right">
+                <div class="message" [innerHTML]="message.ms_message" autolinker>
+                </div>
+            </div>
+            <div class="cf"></div>
+            <div class="time right slide-right">
+                <span>
+                    <ion-icon name="md-time"></ion-icon> {{message.ms_dtcreation | moment:"hh:mm a" | lowercase}}
+                    <ng-container *ngIf="!message.Mob_messagesTextsReadId">
+                        <ion-icon name="md-checkmark"></ion-icon>
+                    </ng-container>
+
+                    <ng-container *ngIf="message.Mob_messagesTextsReadId">
+                        <ion-icon name="done-all"></ion-icon>
+                    </ng-container>
+                </span>
+            </div>
+        </div>
+        <div class="cf"></div>
+    </div>
+</ion-content>
+<ion-footer>
+    <form [formGroup]="messageForm" (submit)="send(chatBox)" novalidate>
+        <ion-item>
+            <ion-input formControlName="message" [(ngModel)]="chatBox" placeholder="Send {{toUser.username}} a message..."></ion-input>
+            <button ion-button clear (click)="send(chatBox)" item-end><ion-icon class="footer-btn" name="send"></ion-icon></button>
+        </ion-item>
+    </form>
+</ion-footer>

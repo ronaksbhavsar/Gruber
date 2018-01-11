@@ -1,0 +1,15 @@
+{
+  "name": "Gruber Trucker App",
+  "short_name": "Gruber Trucker App",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/img/gruber-icon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#4e8ef7",
+  "theme_color": "#4e8ef7"
+}

@@ -1,0 +1,74 @@
+<!--<ion-header>
+
+    <ion-navbar>
+        <ion-title>{{ 'PROFILE_TITLE' | translate }}</ion-title>
+    </ion-navbar>
+</ion-header>-->
+<ion-content>
+    <div id="profile-bg"></div>
+    <div id="content">
+        <div>
+            <div id="profile-info" padding>
+                <ion-row>
+                    <ion-col col-2>
+                        <button ion-button small item-start class="notification-button" (click)="goToOtherPage('NotificationsListPage')">
+                            <ion-icon name="ios-notifications-outline"></ion-icon>
+                        </button>
+                    </ion-col>
+                    <ion-col col-8>
+                        <img id="profile-image" [src]="user.u_photo || profilePic">
+                        <button ion-button small item-start class="settings-button" (click)="goToOtherPage('SettingsPage')">
+                            <ion-icon name="settings"></ion-icon>
+                        </button>
+                    </ion-col>
+                    <ion-col col-2>
+                        <button ion-button small item-end class="sync-button" (click)="syncData()">
+                            <ion-icon name="ios-refresh-outline">&nbsp;</ion-icon>
+                            {{'SYNC' | translate}}
+                        </button>
+                    </ion-col>
+                </ion-row>
+                <p class="welcome-back">{{'WELCOME_BACK' | translate}},</p>
+                <h3 id="profile-name">{{user.u_name}}</h3>
+            </div>
+
+            <ion-row class="quick-tools">
+                <ion-col col-12>
+                    <span>{{'PROFILE_QUICKTOOLS' | translate}}</span>
+                </ion-col>
+            </ion-row>
+            <ion-grid class="main-features">
+                <ion-row>
+                    <ion-col col-6 text-center class="b-right b-bottom" (click)="checkPageHasCurrentActivity()">
+                        <!--<ion-icon name="pulse"></ion-icon>-->
+                        <img src="assets/img/current-activity.png" />
+                        <span class="item-block">{{'PROFILE_CURRENTACTIVITY' | translate}}</span>
+                    </ion-col>
+                    <ion-col col-6 text-center class="b-bottom" (click)="goToOtherPage('ActivityListPage')">
+
+                        <img src="assets/img/activities.png" />
+                        <span class="item-block">{{'PROFILE_ACTIVITIES' | translate}}</span>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col col-6 text-center class="b-right" (click)="goToOtherPage('ChatsPage')">
+                        <img src="assets/img/messages.png" class="img-icon" />
+                        <span class="item-block">{{'PROFILE_MESSAGES' | translate}}</span>
+                    </ion-col>
+                    <ion-col col-6 text-center>
+                        <img src="assets/img/statistics.png" class="img-icon" />
+                        <span class="item-block">{{'PROFILE_STATISTICS' | translate}}</span>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+            <ion-row class="footer">
+                <ion-col col-12>
+                    <span class="footer-text">{{'PROFILE_A_PRODUCTBY' | translate}}<img [src]="logoImage" /> </span>
+                </ion-col>
+            </ion-row>
+        </div>
+    </div>
+
+</ion-content>
